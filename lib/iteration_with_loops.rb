@@ -13,9 +13,10 @@ def find_min_in_nested_arrays(src)
       if src[outer_index][inner_index] < min_num
         min_num = src[outer_index][inner_index]
       end
-      binding.pry
+      
       inner_index += 1
     end
+    binding.pry
     new_array << min_num
     outer_index += 1
   end
