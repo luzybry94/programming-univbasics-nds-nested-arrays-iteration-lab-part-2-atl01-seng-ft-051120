@@ -1,3 +1,5 @@
+req "pry" 
+
 def find_min_in_nested_arrays(src)
   # src will be an array of arrays of integers
   # Produce a new Array that contains the smallest number of each of the nested arrays
@@ -11,6 +13,7 @@ def find_min_in_nested_arrays(src)
       if src[outer_index][inner_index] < min_num
         min_num = src[outer_index][inner_index]
       end
+      binding.pry
       inner_index += 1
     end
     new_array << min_num
